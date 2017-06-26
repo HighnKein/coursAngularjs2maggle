@@ -9,7 +9,6 @@ export class ForecastComponent {
 
   windSpeedKnots: number = 20;
   instability: number = 1.8;
-  isRaining: string = 'sunny'; 
 
   booButtonDisabled: boolean = false;
 
