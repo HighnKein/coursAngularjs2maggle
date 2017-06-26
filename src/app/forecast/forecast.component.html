@@ -24,5 +24,9 @@
   <ng-template ngSwitchDefault>Il y a pas de météo !</ng-template>
 </span>
 
+<ul *ngFor="let etudiant of tabClasse">
+  <li>{{etudiant.nom}} a {{etudiant.age}} ans.</li>
+</ul>
+
 </body>
 </html>

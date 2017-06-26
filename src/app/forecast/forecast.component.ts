@@ -8,7 +8,16 @@ import {Component} from '@angular/core';
 export class ForecastComponent {
 
   windSpeedKnots: number = 20;
-  instability: number = 1.8;
+  instability: number = 1.1;
+
+  isRaining: string = 'sunny';
+
+  tabClasse: Array<any> = [
+    {nom : 'Cedric', age : 20},
+    {nom : 'Julien', age : 30},
+    {nom : 'Julie', age : 20},
+    {nom : 'Jean', age : 19}
+  ];
 
   booButtonDisabled: boolean = false;
 
