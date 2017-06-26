@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+</head>
+<body>
+<p>Weather is Expected !</p>
+<ul>
+  <li>Wind speed (Knots) : {{windSpeedKnots}}</li>
+  <li>Wind speed (MPH) : {{windSpeedKnots * 1.1}}</li>
+  <li>Max Speed (Knots) : {{windSpeedKnots * instability}}</li>
+</ul>
+
+<button [disabled]="booButtonDisabled" (click)="updateWeather()">Update weather</button>
+
+
+<span>{{city}}</span>
+
+<span [ngSwitch]="isRaining">
+  <ng-template [ngSwitchCase]="'raining'">Il pleut !</ng-template>
+  <ng-template [ngSwitchCase]="'cloudy'">Il fait pas beau mais il pleut pas !</ng-template>
+  <ng-template [ngSwitchCase]="'sunny'">Il fait beau : GO GARDEN PARTY !</ng-template>
+</span>
+
+</body>
+</html>
